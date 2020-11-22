@@ -1,5 +1,7 @@
 package com.example.demo.string;
 
+import java.util.UUID;
+
 /**
  * @description: Test
  * @author: hetao
@@ -18,6 +20,6 @@ public class StringTest {
         System.out.println(b==c);
         System.out.println(a==c);
         System.out.println(a==d);
-
+        System.out.println(UUID.randomUUID().toString().replaceAll("-","").substring(0,6));
     }
 }
