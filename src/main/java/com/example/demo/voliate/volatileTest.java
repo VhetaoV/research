@@ -11,9 +11,11 @@ public class volatileTest{
         A instance = new A();
 
         Atest atest = new Atest(instance);
-        atest.run();
         Btest btest = new Btest(instance);
+        atest.run();
         btest.run();
+
+
     }
 
 }
@@ -45,6 +47,7 @@ class Btest implements Runnable{
         while(instance.a != 4){
             Thread.yield();
         }
+//        instance.methodB();
         System.out.print(instance.b);
     }
 }
