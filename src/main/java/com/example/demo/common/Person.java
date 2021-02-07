@@ -36,11 +36,15 @@ public class Person{
         this.userName = userName;
     }
 
+    public Person() {
+    }
+
     public Person(int id, String userName, int age) {
         this.id = id;
         this.userName = userName;
         this.age = age;
     }
+
 
     @Override
     public String toString() {
