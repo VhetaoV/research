@@ -43,6 +43,7 @@ public class MultiThreadServerDemo {
                 //开始读客户端发来的数据
                 while ((readData = bufferedRead.readLine()) != null) {
                     printWrite.println(readData); //输出读到的数据
+                    printWrite.close();
                 }
                 //回发客户端确认连接信息
                 printWrite.write("建立连接成功.\r\n");

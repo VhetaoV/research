@@ -27,7 +27,7 @@ public class ClientDemo implements Runnable{
             clientSocket.connect(serverAddress);
             PrintWriter printWrite = new PrintWriter(clientSocket.getOutputStream());
             printWrite.println(clientSocket.getRemoteSocketAddress() + "send message.");
-            //printWrite.flush(); // 将缓冲区的数据输出,刷新缓冲区
+            printWrite.flush(); // 将缓冲区的数据输出,刷新缓冲区
 
             streamRead = new InputStreamReader(clientSocket.getInputStream());
             bufferedRead = new BufferedReader(streamRead);

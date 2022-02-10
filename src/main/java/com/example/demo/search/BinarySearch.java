@@ -8,16 +8,16 @@ public class BinarySearch {
         System.out.println(res);
     }
 
-    public static int binarySearch(int[] array ,int k){
+    public static int binarySearch(int[] array ,int data){
         int low=0;
         int high=array.length-1;
         while(low<high){
             int mid = (low+high)/2;
-           if(k == array[mid]){
+           if(data == array[mid]){
                return mid;
-           }else if(k > array[mid]){
+           }else if(data > array[mid]){
                low = low+1;
-           }else if (k < array[mid]){
+           }else if (data < array[mid]){
                high = high - 1;
            }
         }
