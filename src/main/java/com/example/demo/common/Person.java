@@ -5,7 +5,8 @@ package com.example.demo.common;
  * @author: hetao
  * @create: 2020-04-22 15:17
  **/
-public class Person{
+public class Person extends Object{
+
 
     private int id;
     private String userName;
