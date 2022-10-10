@@ -7,7 +7,7 @@ package com.example.demo.sort;
  **/
 public class mergeSort {
 
-    public static  void main(String[] args){
+    public static void main(String[] args){
         int[] data = new int[]{ 2, 4, 7, 5, 8, 1, 3, 6 };
         System.out.print("排序前：\t");
         print(data);
@@ -15,7 +15,10 @@ public class mergeSort {
         mergeSort(data,0,data.length-1);
         System.out.println("排序后：\t");
         print(data);
+
+
     }
+
 
     /**
      * @Description:
@@ -76,7 +79,7 @@ public class mergeSort {
         while (j <= rightEnd) {
             temp[k++] = data[j++];
         }
-        //将临时数组中的内容拷贝回原来的数组中，其实位置为leftStart
+        //将临时数组中的内容拷贝回原来的数组中，起始位置为leftStart
         //即left-right范围内的数据
         k = leftStart;
         for (int element : temp) {
