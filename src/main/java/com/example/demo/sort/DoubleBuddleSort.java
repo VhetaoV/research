@@ -2,6 +2,7 @@ package com.example.demo.sort;
 
 /**
  * @description: 双向冒泡排序  较大气泡从左到右移动，较小气泡从右到左移动”来实现双向冒泡排序的效果
+ * 时间复杂度 O(n^2)
  * @author: chenliang
  * @create: 2022-10-15 22:47
  **/

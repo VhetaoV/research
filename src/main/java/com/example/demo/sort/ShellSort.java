@@ -2,6 +2,7 @@ package com.example.demo.sort;
 
 /**
  * @description: 希尔排序  https://www.cnblogs.com/skywang12345/p/3597597.html
+ * 希尔排序的时间复杂度与增量(即，步长gap)的选取有关。例如，当增量为1时，希尔排序退化成了直接插入排序，此时的时间复杂度为O(N²)，而Hibbard增量的希尔排序的时间复杂度为O(N3/2)。
  * @author: chenliang
  * @create: 2022-10-20 09:05
  **/

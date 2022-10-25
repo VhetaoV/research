@@ -2,6 +2,7 @@ package com.example.demo.sort;
 
 /**
  * @description: 插入排序
+ * 时间复杂度：O(n^2)
  * @author: chenliang
  * @create: 2022-10-12 09:16
  **/
