@@ -33,6 +33,7 @@ public class LocalDateTimeTest {
         System.out.println(LocalDateTime.now().plus(2, ChronoUnit.DAYS));
         System.out.println(LocalDateTime.now().plus(Period.ofDays(-2)));
 
+        System.out.println(localDateTime.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")));
 
     }
 }
